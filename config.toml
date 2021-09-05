@@ -4,14 +4,14 @@ title = "Odaepo's Blog"
 theme = "researcher"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
-math = true          # enable KaTeX (https://katex.org/) globally
+math = false          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = ""  # add your tracking id
 
 [params]
-  author = "Olivier Roques"
+  author = "OdaepO"
   description = "A simple monospaced resume theme for Hugo."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
-  logo = ""  # url or path to a logo to put in the header
+  logo = "/img/logoodaepo.png"  # url or path to a logo to put in the header
   [params.footer]
     text = "By Olivier Roques"
     url = "https://github.com/ojroques/hugo-researcher"
@@ -38,6 +38,15 @@ googleAnalytics = ""  # add your tracking id
     name = "About"
     url = "/about"
     weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/post"
+    weight = 1
+  [[menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    weight = 300
+    url = "/tags"
   [[menu.main]]
     name = "Resume"
     url = "/resume.pdf"
